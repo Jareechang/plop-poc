@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+# Plop Scaffolding tool (poc)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proof of concept of the [plopjs](https://plopjs.com/) scaffolding tool to add consistency within software projects. 
 
-## Available Scripts
+My impression of the tool is that it is more light weight than yeoman, and provides enough of what you need to set standards and consistency when scaffolding files within your project.
 
-In the project directory, you can run:
+This is a proof of concept to evaluate the tool.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Pros and Cons](#pros-and-cons)
+- [Final thoughts](#final-thoughts)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Pros and Cons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pros
 
-### `yarn build`
+- Simple and easy to use (created full template within 15 minutes)
+- Examples are good enough for reference
+- Works out of the box (no additional packages needed)
+- Contains familiar ecosystem tools (`inquirer.js` for prompt and `handlbars` for templating)
+- Contains various tools and helpers for customization
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Some Documentation may be outdated
+- Unable to use `--help` command on individual commands
+- No plugin or namespaces support
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+# Final thoughts
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Would I recommend this tool ? **Yes**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+It is simple and very easy to get started. I was able to get scaffolding for components, tests and readme within 15 minutes. Additionally, it is quite light weight and it contains everything out of the box.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The only thing that may be lacking are support for more "advanced" features found in other CLI tool like namespaces and plugins system. That may or may not be an issue depending on your needs.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Overall, great candidate for streamlining your workflow and adding consistency within your project.
